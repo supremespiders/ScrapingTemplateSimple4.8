@@ -69,6 +69,7 @@
   <ItemGroup>
     <Compile Include="Extensions\HttpClientExtensions.cs" />
     <Compile Include="Extensions\MultitaskingExtensions.cs" />
+    <Compile Include="Extensions\ReflectionExtensions.cs" />
     <Compile Include="Extensions\UtilityExtensions.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using HtmlAgilityPack;
 using ScrapingTemplateSimple4._8.Models;
 
 namespace ScrapingTemplateSimple4._8.Extensions
@@ -158,6 +159,13 @@ namespace ScrapingTemplateSimple4._8.Extensions
             {
                 await response.Content.CopyToAsync(fs).ConfigureAwait(false);
             }
+        }
+        
+        public static async Task<HtmlDocument> ToDoc(this Task<string> task)
+        {
+            var doc = new HtmlDocument();
+            doc.LoadHtml(await task.ConfigureAwait(false));
+            return doc;
         }
     }
 }
