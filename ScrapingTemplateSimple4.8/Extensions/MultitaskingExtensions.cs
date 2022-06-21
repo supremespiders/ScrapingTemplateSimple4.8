@@ -167,6 +167,7 @@ namespace ScrapingTemplateSimple4._8.Extensions
             if (File.Exists(name))
                 outputs = name.Load<T2>();
             if (outputs == null) throw new KnownException($"Null output on file");
+            if (outputs.Count == 0) return;
             HashSet<string> collected;
             if (isOutputString)
             {
