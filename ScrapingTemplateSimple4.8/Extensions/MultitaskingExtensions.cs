@@ -29,7 +29,7 @@ namespace ScrapingTemplateSimple4._8.Extensions
             if (resume)
                 PrepareResume(ref inputs, ref outputs);
             var isString = inputs.First() is string;
-            var name = typeof(T).Name;
+            var name = typeof(T2).Name;
             if (name == "String")
                 name = "Urls";
             Notifier.Display("Start working");
@@ -97,7 +97,7 @@ namespace ScrapingTemplateSimple4._8.Extensions
             if (resume)
                 PrepareResume(ref inputs, ref outputs);
             var isString = inputs.First() is string;
-            var name = typeof(T).Name;
+            var name = typeof(T2).Name;
             if (name == "String")
                 name = "Urls";
             Notifier.Display("Start working");

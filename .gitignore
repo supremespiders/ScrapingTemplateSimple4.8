@@ -3,3 +3,7 @@
 ################################################################################
 
 /ScrapingTemplateSimple4.8/obj
+/packages
+/.vs
+/.idea/.idea.ScrapingTemplateSimple4.8/.idea
+/ScrapingTemplateSimple4.8/bin/Debug
